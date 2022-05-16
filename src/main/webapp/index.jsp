@@ -1,24 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>1석4조</title>
+
+<link href="resources/css/bootstrap.css" rel="stylesheet">
+<script src="resources/js/jquery-3.6.0.js"></script>
+<script src="resources/js/bootstrap.js"></script>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1> 1석 4조 인덱스 페이지 입니다.</h1>
-	<h1> 효석: 보이시나요?</h1>
-	<h1> 원준: 잘보입니다</h1>
-	<h1> 영우: 제것도 잘 보였으면 좋겠습니다.</h1>
-	<H1> 유진 : 저는요???????????/</H1>
-	<h1> 현주 : 푸시 테스트할게요 </h1>
-	<h1> 현주 : 푸시 테스트합니당 </h1>
-	<h1>작성</h1>
-	<h2>작성두번째</h2>
-	<h1> 커밋확인</h1>
-	<h1> 커밋확인2</h1>
-	<h1> 작업</h1>
-	<h1>효석 : 브런치 작업</h1>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-secondary">Secondary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-light">Light</button>
+	<button type="button" class="btn btn-dark">Dark</button>
+	<button type="button" class="btn btn-link">Link</button>
 </body>
 </html>
