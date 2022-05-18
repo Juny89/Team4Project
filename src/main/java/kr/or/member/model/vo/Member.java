@@ -19,7 +19,4 @@ public class Member {
 	private String enrollDate;
 	private int memberPoint;
 	private String memberIntro;
-	
-	
-	
 }
