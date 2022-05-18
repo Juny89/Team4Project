@@ -47,7 +47,7 @@
 										<h5 class="modal-title" id="exampleModalLabel">로그인</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 									</div>
-									<form action="#" method="post">
+									<form action="/login.kt" method="post">
 										<div class="modal-body">
 											<fieldset>
 												<legend>로그인</legend>
@@ -56,7 +56,7 @@
 											</fieldset>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-primary">로그인</button>
+											<button type="submit" class="btn btn-primary">로그인</button>
 											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
 										</div>
 									</form>
