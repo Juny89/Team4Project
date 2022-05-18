@@ -32,19 +32,24 @@
 				<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 ms-lg-5" style="width:27%;">
 					<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
 				</form>
-				<ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0 me-lg-5">
-					<li><a href="#" class="nav-link px-2 link-dark">위시리스트</a></li>
-					<li><a href="#" class="nav-link px-2 link-dark">내 여행</a></li>
-					<li><a href="#" class="nav-link px-2 link-dark">문의하기</a></li>
-				</ul>
-
-				
-
-				<div class="dropdown text-end">
-					<a href="#" class="d-block link-dark text-decoration-none" >
-						<span class="material-symbols-outlined" style="font-size:40px;">account_circle_full</span>
-					</a>
-				</div>
+				<c:choose>
+					<c:when test="${empty sessionScope.m }">
+						
+					</c:when>
+					<c:otherwise>
+						<ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0 me-lg-5">
+							<li><a href="#" class="nav-link px-2 link-dark">위시리스트</a></li>
+							<li><a href="#" class="nav-link px-2 link-dark">내 여행</a></li>
+							<li><a href="#" class="nav-link px-2 link-dark">문의하기</a></li>
+						</ul>
+		
+						<div class="dropdown text-end">
+							<a href="#" class="d-block link-dark text-decoration-none" >
+								<span class="material-symbols-outlined" style="font-size:40px;">account_circle_full</span>
+							</a>
+						</div>
+					</c:otherwise>
+				</c:choose>
 			</div>
 		</div>
 	</header>
