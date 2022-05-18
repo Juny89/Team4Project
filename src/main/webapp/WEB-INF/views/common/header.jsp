@@ -35,7 +35,34 @@
 				</form>
 				<c:choose>
 					<c:when test="${empty sessionScope.m }">
-						
+						<ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0 me-lg-5">
+							<li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</button></li>
+							<li><a href="#" class="nav-link px-2 link-dark">회원가입</a></li>
+						</ul>
+						<div class="modal fade" id="exampleModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">로그인</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<form action="#" method="post">
+										<div class="modal-body">
+											<fieldset>
+												<legend>로그인</legend>
+												아이디:<input type="text" name="memberId"><br>
+												비번:<input type="password" name="memberPw"><br>	
+											</fieldset>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary">로그인</button>
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
 					</c:when>
 					<c:otherwise>
 						<ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0 me-lg-5">
