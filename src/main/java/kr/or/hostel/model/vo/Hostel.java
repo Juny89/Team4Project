@@ -1,4 +1,4 @@
-package kr.or.hostel.model.service;
+package kr.or.hostel.model.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Member {
+public class Hostel {
 	private int memberNo;
 	private String memberId;
 	private String memberPw;
