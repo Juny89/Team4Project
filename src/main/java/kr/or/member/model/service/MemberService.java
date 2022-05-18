@@ -14,7 +14,6 @@ public class MemberService {
 	@Autowired
 	private MemberDao dao;
 	
-	@Autowired
 	public Member selectOneMember(Member m) {
 		// TODO Auto-generated method stub
 		if(m.getMemberId().isEmpty() || m.getMemberPw().isEmpty()) {
